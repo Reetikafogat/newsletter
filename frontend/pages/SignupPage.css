@@ -1,0 +1,180 @@
+.signup-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  padding: 2rem;
+}
+
+.signup-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.signup-header {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.signup-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.signup-logo .logo-icon {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.signup-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.signup-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.signup-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.signup-form-section {
+  padding: 3rem 2rem;
+  background: #f8f9fa;
+}
+
+.plan-info-section {
+  padding: 3rem 2rem;
+  background: white;
+}
+
+.plan-info-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.plan-info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.plan-info-card {
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 2px solid;
+  transition: transform 0.3s ease;
+}
+
+.plan-info-card:hover {
+  transform: translateY(-5px);
+}
+
+.plan-info-card.free {
+  border-color: #e1e5e9;
+  background: #f8f9fa;
+}
+
+.plan-info-card.premium {
+  border-color: #8b5cf6;
+  background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+}
+
+.plan-info-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.plan-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #8b5cf6;
+}
+
+.plan-info-card.free .plan-price {
+  color: #28a745;
+}
+
+.plan-info-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan-info-card li {
+  padding: 0.25rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.features-highlight {
+  margin-top: 2rem;
+}
+
+.features-highlight h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.feature-icon {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .signup-header {
+    padding: 2rem 1rem;
+  }
+  
+  .signup-header h1 {
+    font-size: 2rem;
+  }
+  
+  .signup-form-section,
+  .plan-info-section {
+    padding: 2rem 1rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+} 
